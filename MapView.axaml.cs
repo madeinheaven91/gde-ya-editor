@@ -11,6 +11,7 @@ using Avalonia.Interactivity;
 using Avalonia.Media;
 using Avalonia.Platform;
 using Avalonia.Platform.Storage;
+using Avalonia.Svg.Skia;
 
 namespace map_app;
 
@@ -33,23 +34,32 @@ public partial class MapView : Window
     {
         base.OnOpened(e);
 
-        string imageUri = "avares://map_app/Assets/map.png";
+        string imageUri = "avares://map_app/Assets/map.svg";
         string jsonUri = "avares://map_app/Assets/graph.json";
 
         LoadMapImage(imageUri);
         LoadGraphData(jsonUri);
     }
 
+    // Координаты в graph.json заданы в пикселях прежней растровой карты (1280x853).
+    // map.svg — её трассировка в масштабе 1.2 (1536x1024), поэтому рисуем SVG
+    // в исходном размере, чтобы существующие узлы остались на своих местах.
+    private const double MapWidth = 1280;
+    private const double MapHeight = 853;
+
     private void LoadMapImage(string resourceUri)
     {
         try
         {
             using var stream = AssetLoader.Open(new Uri(resourceUri));
-            var bitmap = new Avalonia.Media.Imaging.Bitmap(stream);
-            MapImage.Source = bitmap;
+            var svg = SvgSource.LoadFromStream(stream);
+            MapImage.Source = new SvgImage { Source = svg };
 
-            GraphCanvas.Width = bitmap.Size.Width;
-            GraphCanvas.Height = bitmap.Size.Height;
+            MapImage.Width = MapWidth;
+            MapImage.Height = MapHeight;
+
+            GraphCanvas.Width = MapWidth;
+            GraphCanvas.Height = MapHeight;
         }
         catch (Exception ex)
         {

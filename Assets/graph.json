@@ -3,174 +3,94 @@
     {
       "id": 1,
       "type": "waypoint",
-      "x": 661.5,
-      "y": 515.9,
-      "name": "\u0433\u043B\u0430\u0432\u043D\u044B\u0439 \u043A\u043E\u0440\u043F\u0443\u0441"
+      "x": 534.5,
+      "y": 532.7,
+      "name": "\u0413\u043B\u0430\u0432\u043D\u044B\u0439 \u043A\u043E\u0440\u043F\u0443\u0441"
     },
     {
       "id": 2,
-      "type": "entrance",
-      "x": 665,
-      "y": 550.4,
-      "accessible": true,
-      "building": 1
+      "type": "waypoint",
+      "x": 541.7,
+      "y": 376.5,
+      "name": "\u0426\u0435\u043D\u0442\u0440\u0430\u043B\u044C\u043D\u0430\u044F \u043F\u043B\u043E\u0449\u0430\u0434\u044C"
     },
     {
       "id": 3,
-      "type": "stairs",
-      "x": 663.1,
-      "y": 576
+      "type": "waypoint",
+      "x": 288.5,
+      "y": 147.9,
+      "name": "\u041E\u0431\u0449\u0435\u0436\u0438\u0442\u0438\u0435 #1"
     },
     {
       "id": 4,
-      "type": "road",
-      "x": 666.3,
-      "y": 596
+      "type": "waypoint",
+      "x": 279.9,
+      "y": 281,
+      "name": "\u041E\u0431\u0449\u0435\u0436\u0438\u0442\u0438\u0435 #2"
     },
     {
       "id": 5,
-      "type": "road",
-      "x": 666.3,
-      "y": 623.2
+      "type": "waypoint",
+      "x": 498.3,
+      "y": 156.6,
+      "name": "\u041E\u0431\u0449\u0435\u0436\u0438\u0442\u0438\u0435 #3"
+    },
+    {
+      "id": 6,
+      "type": "waypoint",
+      "x": 1016.3,
+      "y": 372.1,
+      "name": "\u041C\u0435\u0434\u043F\u0443\u043D\u043A\u0442"
     },
     {
       "id": 7,
-      "type": "road",
-      "x": 771.1,
-      "y": 628.8
+      "type": "waypoint",
+      "x": 1062.5,
+      "y": 535.6,
+      "name": "\u0421\u0442\u043E\u043B\u043E\u0432\u0430\u044F"
+    },
+    {
+      "id": 8,
+      "type": "waypoint",
+      "x": 790.6,
+      "y": 197.1,
+      "name": "\u0421\u0442\u0430\u0434\u0438\u043E\u043D"
     },
     {
       "id": 9,
-      "type": "road",
-      "x": 769.5,
-      "y": 673.6
+      "type": "waypoint",
+      "x": 887.5,
+      "y": 195.6,
+      "name": "\u0421\u043F\u043E\u0440\u0442\u0437\u0430\u043B"
     },
     {
       "id": 10,
       "type": "waypoint",
-      "x": 871.9,
-      "y": 679.2,
-      "name": "\u043E\u0431\u0449\u0430\u0433\u0430"
+      "x": 1074.1,
+      "y": 201.4,
+      "name": "\u041F\u0430\u0440\u043A\u043E\u0432\u043A\u0430 #1"
+    },
+    {
+      "id": 11,
+      "type": "waypoint",
+      "x": 271.2,
+      "y": 703.5,
+      "name": "\u041F\u0430\u0440\u043A\u043E\u0432\u043A\u0430 #2"
     },
     {
       "id": 12,
-      "type": "road",
-      "x": 799.1,
-      "y": 675.2
+      "type": "waypoint",
+      "x": 890.4,
+      "y": 803.3,
+      "name": "\u041E\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430 \u0426\u0435\u043D\u0442\u0440\u0430\u043B\u044C\u043D\u0430\u044F"
     },
     {
       "id": 13,
-      "type": "road",
-      "x": 801.5,
-      "y": 716
-    },
-    {
-      "id": 14,
-      "type": "road",
-      "x": 822.3,
-      "y": 718.4
-    },
-    {
-      "id": 15,
-      "type": "entrance",
-      "x": 822.3,
-      "y": 704.8,
-      "accessible": true,
-      "building": 10
-    },
-    {
-      "id": 16,
-      "type": "entrance",
-      "x": 810.3,
-      "y": 672.8,
-      "accessible": false,
-      "building": 10
-    },
-    {
-      "id": 17,
-      "type": "road",
-      "x": 553.5,
-      "y": 628.8
-    },
-    {
-      "id": 18,
-      "type": "road",
-      "x": 521.5,
-      "y": 624.8
-    },
-    {
-      "id": 19,
       "type": "waypoint",
-      "x": 434.3,
-      "y": 650.4,
-      "name": "\u043F\u0430\u0440\u043A\u043E\u0432\u043A\u0430"
+      "x": 1205.8,
+      "y": 438.7,
+      "name": "\u041E\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430 \u0421\u0442\u0443\u0434\u0435\u043D\u0447\u0435\u0441\u043A\u0430\u044F"
     }
   ],
-  "edges": [
-    {
-      "source": 2,
-      "target": 3,
-      "time": 30
-    },
-    {
-      "source": 3,
-      "target": 4,
-      "time": 30
-    },
-    {
-      "source": 4,
-      "target": 5,
-      "time": 30
-    },
-    {
-      "source": 5,
-      "target": 7,
-      "time": 60
-    },
-    {
-      "source": 7,
-      "target": 9,
-      "time": 45
-    },
-    {
-      "source": 9,
-      "target": 12,
-      "time": 30
-    },
-    {
-      "source": 16,
-      "target": 12,
-      "time": 0
-    },
-    {
-      "source": 12,
-      "target": 13,
-      "time": 15
-    },
-    {
-      "source": 13,
-      "target": 14,
-      "time": 10
-    },
-    {
-      "source": 14,
-      "target": 15,
-      "time": 0
-    },
-    {
-      "source": 19,
-      "target": 18,
-      "time": 60
-    },
-    {
-      "source": 18,
-      "target": 17,
-      "time": 10
-    },
-    {
-      "source": 17,
-      "target": 5,
-      "time": 60
-    }
-  ]
+  "edges": []
 }
