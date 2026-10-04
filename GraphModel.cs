@@ -42,7 +42,6 @@ public class EdgeDto
     [JsonPropertyName("target")]
     public int Target { get; set; }
 
-    /// <summary>Время прохождения связи в секундах.</summary>
     [JsonPropertyName("time")]
     public double Time { get; set; }
 }

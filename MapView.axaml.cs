@@ -41,9 +41,6 @@ public partial class MapView : Window
         LoadGraphData(jsonUri);
     }
 
-    // Координаты в graph.json заданы в пикселях прежней растровой карты (1280x853).
-    // map.svg — её трассировка в масштабе 1.2 (1536x1024), поэтому рисуем SVG
-    // в исходном размере, чтобы существующие узлы остались на своих местах.
     private const double MapWidth = 1280;
     private const double MapHeight = 853;
 
@@ -103,7 +100,7 @@ public partial class MapView : Window
                 };
                 GraphCanvas.Children.Add(line);
 
-                // Прозрачная толстая линия сверху — чтобы по связи было легче попасть курсором.
+                // прозрачная толстая линия сверху чтобы по связи было легче попасть курсором.
                 var hitArea = new Line
                 {
                     StartPoint = start,
@@ -114,7 +111,7 @@ public partial class MapView : Window
                     Tag = edge
                 };
 
-                ToolTip.SetTip(hitArea, $"Связь {edge.Source} → {edge.Target} | Время: {edge.Time.ToString(CultureInfo.InvariantCulture)} с");
+                ToolTip.SetTip(hitArea, $"Связь {edge.Source} -> {edge.Target} | Время: {edge.Time.ToString(CultureInfo.InvariantCulture)} с");
                 hitArea.PointerPressed += OnEdgePointerPressed;
 
                 GraphCanvas.Children.Add(hitArea);
@@ -271,7 +268,7 @@ public partial class MapView : Window
         {
             _editingEdge = edge;
 
-            EdgeOverlayTitle.Text = $"Связь {edge.Source} → {edge.Target}";
+            EdgeOverlayTitle.Text = $"Связь {edge.Source} -> {edge.Target}";
             EdgeTimeInput.Text = edge.Time.ToString(CultureInfo.InvariantCulture);
             EdgeTimeError.IsVisible = false;
 
