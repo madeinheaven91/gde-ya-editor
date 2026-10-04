@@ -1,0 +1,48 @@
+classDiagram
+    class MainWindow {
+        +MainWindow() MainWindow
+    }
+    class App {
+        +Initialize() void
+        +OnFrameworkInitializationCompleted() void
+    }
+    class NodeDto {
+    }
+    class EdgeDto {
+    }
+    class GraphDataDto {
+    }
+    class GraphLoader {
+        +LoadFromResource(resourceUri: string) GraphDataDto?
+    }
+    class MapView {
+        -_selectedEdgeSource: NodeDto?
+        -_editingNode: NodeDto?
+        -_pendingNodePos: Point?
+        -_nextId: int
+        +MapView() MapView
+        +OnOpened(e: EventArgs) void
+        +LoadMapImage(resourceUri: string) void
+        +LoadGraphData(resourceUri: string) void
+        +RedrawGraph() void
+        +GetNodeColor(type: string) IBrush
+        +GetNodeTooltip(node: NodeDto) string
+        +OnCanvasPointerPressed(sender: object?, e: PointerPressedEventArgs) void
+        +OnNodePointerPressed(sender: object?, e: PointerPressedEventArgs) void
+        +OnNodeTypeChanged(sender: object?, e: SelectionChangedEventArgs) void
+        +UpdateFieldsVisibility(type: string) void
+        +UpdateBuildingComboBox() void
+        +SelectBuildingInComboBox(buildingId: int?) void
+        +OnSaveNodeEdit(sender: object?, e: RoutedEventArgs) void
+        +OnDeleteNodeClick(sender: object?, e: RoutedEventArgs) void
+        +OnCancelNodeEdit(sender: object?, e: RoutedEventArgs) void
+        +OnSaveJsonClick(sender: object?, e: RoutedEventArgs) void
+        +OnClearGraphClick(sender: object?, e: RoutedEventArgs) void
+        +OnResetZoomClick(sender: object?, e: RoutedEventArgs) void
+    }
+    class Program {
+        +Main(args: string[]) void
+        +BuildAvaloniaApp() AppBuilder
+    }
+    MainWindow ..> MainWindow
+    MapView ..> MapView

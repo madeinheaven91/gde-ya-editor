@@ -19,10 +19,6 @@
       <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
       <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
     </PackageReference>
-    <!-- Avalonia.Skia pins native assets to 2.88.9, but Avalonia.Svg.Skia drags
-         managed SkiaSharp up to 3.116.1, which rejects the 88.x native lib. -->
-    <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="3.116.1" />
-    <PackageReference Include="HarfBuzzSharp.NativeAssets.Linux" Version="8.3.0.1" />
     <PackageReference Include="QuikGraph" Version="2.5.0" />
     <PackageReference Include="QuikGraph.Graphviz" Version="2.5.0" />
     <AvaloniaResource Include="Assets\**" />
